@@ -14,10 +14,17 @@ import { icons, SIZES } from "../../../constants";
 
 const Welcome = () => {
   const router = useRouter();
-  
+
   return (
     <View>
-      <Text>Welcome</Text>
+      <View style={styles.container}>
+        <Text style={styles.userName}>Hello Gillian</Text>
+        <Text style={styles.welcomeMessage}>Find your perfect job</Text>
+      </View>
+      <View style={styles.searchContainer}>
+        <View style={styles.searchWrapper}></View>
+        <TextInput style={styles.searchInput} />
+      </View>
     </View>
   );
 };
